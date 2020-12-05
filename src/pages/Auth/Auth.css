@@ -1,8 +1,55 @@
+.auth-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-card h3 {
+    margin: 4px 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
 .heading {
     font-size: 28px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .heading-blue {
     color: #3768ff;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-element input {
+    font-size: 16px;
+    font-family: inherit;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: 0.2px solid #52525273;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.form-bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

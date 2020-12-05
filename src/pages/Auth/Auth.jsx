@@ -1,15 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Auth.css';
 import Card from '../../components/Card/Card';
+import Button from '../../components/Button/Button';
 
 const Auth = () => {
+  const [signup, setSignup] = useState(false);
   return (
     <div className="auth-container">
       <Card>
-        <p className="heading">
-          <span className="heading-blue">Sign Up</span> into the website
-        </p>
+        <div className="auth-card">
+          <p className="heading">
+            <span className="heading-blue">
+              {signup ? 'Sign Up' : 'Log In'}
+            </span>{' '}
+            into the website
+          </p>
+          <form className="form-box">
+            {signup ? (
+              <div className="form-element">
+                <h3>Name</h3>
+                <input type="text" />
+              </div>
+            ) : null}
+
+            <div className="form-element">
+              <h3>Email</h3>
+              <input type="Email" />
+            </div>
+
+            <div className="form-element">
+              <h3>Password</h3>
+              <input type="password" />
+            </div>
+          </form>
+          <Button btnType="primary">{signup ? 'Sign Up' : 'Log In'}</Button>
+          <div className="form-bottom">
+            <h3>
+              {signup ? 'Already have an account?' : "Don't have an Account?"}
+            </h3>
+            <Button btnType="secondary">
+              {!signup ? 'Sign Up' : 'Log In'}
+            </Button>
+          </div>
+        </div>
       </Card>
     </div>
   );
