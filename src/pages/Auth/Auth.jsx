@@ -39,7 +39,12 @@ const Auth = () => {
             <h3>
               {signup ? 'Already have an account?' : "Don't have an Account?"}
             </h3>
-            <Button btnType="secondary">
+            <Button
+              btnType="secondary"
+              clicked={() => {
+                signup ? setSignup(false) : setSignup(true);
+              }}
+            >
               {!signup ? 'Sign Up' : 'Log In'}
             </Button>
           </div>
