@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Layout>
-        <Route path="/auth" component={Auth} />
+        <Route path="/" exact component={Auth} />
         <Route path="/dashboard" component={Dashboard} />
       </Layout>
     </div>
