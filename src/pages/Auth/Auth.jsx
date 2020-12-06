@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Auth.css';
 import Card from '../../components/Card/Card';
@@ -34,7 +35,13 @@ const Auth = () => {
               <input type="password" />
             </div>
           </form>
-          <Button btnType="primary">{signup ? 'Sign Up' : 'Log In'}</Button>
+
+          <Button btnType="primary">
+            <Link className="link" to="/dashboard">
+              {signup ? 'Sign Up' : 'Log In'}
+            </Link>
+          </Button>
+
           <div className="form-bottom">
             <h3>
               {signup ? 'Already have an account?' : "Don't have an Account?"}
