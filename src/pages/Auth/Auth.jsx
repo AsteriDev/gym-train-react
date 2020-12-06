@@ -6,19 +6,19 @@ import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
 
 const Auth = () => {
-  const [signup, setSignup] = useState(false);
+  const [isSignUp, setIsSignUp] = useState(false);
   return (
     <div className="auth-container">
-      <Card>
+      <Card cardType="main">
         <div className="auth-card">
           <p className="heading">
             <span className="heading-blue">
-              {signup ? 'Sign Up' : 'Log In'}
+              {isSignUp ? 'Sign Up' : 'Log In'}
             </span>{' '}
-            into the website
+            into LiveFitt
           </p>
           <form className="form-box">
-            {signup ? (
+            {isSignUp ? (
               <div className="form-element">
                 <h3>Name</h3>
                 <input type="text" />
@@ -38,21 +38,21 @@ const Auth = () => {
 
           <Button btnType="primary">
             <Link className="link" to="/dashboard">
-              {signup ? 'Sign Up' : 'Log In'}
+              {isSignUp ? 'Sign Up' : 'Log In'}
             </Link>
           </Button>
 
           <div className="form-bottom">
             <h3>
-              {signup ? 'Already have an account?' : "Don't have an Account?"}
+              {isSignUp ? 'Already have an account?' : "Don't have an Account?"}
             </h3>
             <Button
               btnType="secondary"
               clicked={() => {
-                signup ? setSignup(false) : setSignup(true);
+                isSignUp ? setIsSignUp(false) : setIsSignUp(true);
               }}
             >
-              {!signup ? 'Sign Up' : 'Log In'}
+              {!isSignUp ? 'Sign Up' : 'Log In'}
             </Button>
           </div>
         </div>

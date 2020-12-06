@@ -9,6 +9,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 5px;
+}
+
+@media (min-width: 550px) {
+    .auth-card {
+        width: 350px;
+    }
 }
 
 .auth-card h3 {
@@ -20,14 +27,17 @@
 }
 
 .heading {
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: #a4a4a4;
+    font-weight: 300;
 }
 
 .heading-blue {
     color: #3768ff;
+    font-weight: 400;
 }
 
 .form-box {

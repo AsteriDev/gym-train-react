@@ -6,7 +6,7 @@ import './NavBar.css';
 const NavBar = (props) => {
   return (
     <div className="nav">
-      <NavLink to={'/about'}>Dashboard</NavLink>
+      <NavLink to={'/about'}>About</NavLink>
       {props.children}
     </div>
   );
