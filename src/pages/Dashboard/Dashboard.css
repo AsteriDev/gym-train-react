@@ -1,0 +1,22 @@
+.dashboard {}
+
+.hero {
+    display: flex;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-right-back {
+    position: relative;
+    height: 500px;
+}
+
+.hero-right-front {
+    position: absolute;
+    top: 100px;
+    right: 160px;
+    height: 320px;
+    z-index: 10;
+}
