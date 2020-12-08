@@ -6,7 +6,7 @@ import './NavBar.css';
 const NavBar = (props) => {
   return (
     <div className="nav">
-      <div className="nav-logo">LOGO</div>
+      <div className="nav-logo">LOGO...</div>
 
       <div className="nav-items">
         <NavLink
