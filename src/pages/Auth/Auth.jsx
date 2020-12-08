@@ -7,6 +7,7 @@ import Button from '../../components/Button/Button';
 
 const Auth = () => {
   const [isSignUp, setIsSignUp] = useState(false);
+
   return (
     <div className="auth-container">
       <Card cardType="main">
