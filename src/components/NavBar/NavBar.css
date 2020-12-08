@@ -1,6 +1,31 @@
 .nav {
     position: absolute;
-    background: #3768ff;
-    height: 60px;
+    height: 80px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.nav-logo {
+    font-size: 24px;
+    flex: 0.15;
+}
+
+.nav-items {
+    flex: 0.4;
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+.nav-item {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    height: 30px;
+}
+
+.nav-active {
+    border-bottom: 3px solid #3768ff;
 }

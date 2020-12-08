@@ -6,8 +6,34 @@ import './NavBar.css';
 const NavBar = (props) => {
   return (
     <div className="nav">
-      <NavLink to={'/about'}>About</NavLink>
-      {props.children}
+      <div className="nav-logo">LOGO</div>
+
+      <div className="nav-items">
+        <NavLink
+          exact
+          className="nav-item"
+          activeClassName="nav-active"
+          to={'/dashboard'}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          exact
+          className="nav-item"
+          activeClassName="nav-active"
+          to={'/about'}
+        >
+          About
+        </NavLink>
+        <NavLink
+          exact
+          className="nav-item"
+          activeClassName="nav-active"
+          to={'/'}
+        >
+          Log Out
+        </NavLink>
+      </div>
     </div>
   );
 };
