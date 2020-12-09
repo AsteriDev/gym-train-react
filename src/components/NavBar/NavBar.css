@@ -4,11 +4,11 @@
     width: 86%;
     display: flex;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 6.25rem;
 }
 
 .nav-logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     flex: 0.2;
 }
 
@@ -20,12 +20,11 @@
 }
 
 .nav-item {
-    font-size: 22px;
+    font-size: 1.375rem;
     text-decoration: none;
     color: black;
-    height: 30px;
 }
 
 .nav-active {
-    border-bottom: 3px solid #3768ff;
+    border-bottom: 0.2rem solid #3768ff;
 }

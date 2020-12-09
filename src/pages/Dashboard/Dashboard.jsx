@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../../components/NavBar/NavBar';
+import Card from '../../components/Card/Card';
 
 import heroRight from '../../Assets/hero-right.svg';
 import fig1 from '../../Assets/fig-1.svg';
@@ -18,15 +19,21 @@ const Dashboard = () => {
           <img className="hero-right-front" src={fig1} alt="hero-right" />
         </div>
       </section>
+
       <section className="course">
         <div className="course-main">
           <img className="course-main-fig" src={fig2} alt="" />
           <div className="course-main-content">
             <h1>COURSES ENROLLED</h1>
-            <div>Course</div>
+            <div className="card-container">
+              <Card cardType="small">Card Courses</Card>
+              <Card cardType="small">Card Courses</Card>
+            </div>
           </div>
         </div>
       </section>
+
+      <section className="social">Social</section>
     </div>
   );
 };

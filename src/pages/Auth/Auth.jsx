@@ -10,7 +10,7 @@ const Auth = () => {
 
   return (
     <div className="auth-container">
-      <Card cardType="main">
+      <Card cardType="big">
         <div className="auth-card">
           <p className="heading">
             <span className="heading-blue">
