@@ -1,6 +1,6 @@
 {
     "name": "gym-train",
-    "pages": "https://asteridev.github.io/gym-train-react/",
+    "homepage": "https://asteridev.github.io/gym-train-react/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
