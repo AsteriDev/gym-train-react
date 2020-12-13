@@ -20,13 +20,12 @@
 }
 
 .course {
-    margin-top: 140px;
     padding: 1.25rem 0;
     text-align: center;
 }
 
 .course-main {
-    margin: 0 2.5rem;
+    margin: 8rem 2.5rem;
     padding: 3.75rem;
     background: linear-gradient(271.34deg, #2b5eff 3.58%, #48bdff 98.86%);
     box-shadow: 0px 0px 2.5rem rgba(0, 0, 0, 0.3);
@@ -44,7 +43,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0 8.75rem;
 }
 
 .course-main-content h1 {
@@ -57,7 +55,8 @@
 
 .card-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .course h2 {
@@ -67,6 +66,10 @@
     font-size: 2.7rem;
 }
 
+.course-bonus {
+    margin-bottom: 8rem;
+}
+
 .course-bonus h1 {
     font-size: 4rem;
     font-weight: 300;
@@ -74,8 +77,20 @@
     letter-spacing: 10px;
 }
 
+.social {
+    margin-bottom: 4rem;
+}
+
+.social a {
+    transition: transform 0.4s ease-out;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+}
+
 .social-content {
-    margin: 0 25rem;
+    margin-top: 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }

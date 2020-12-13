@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 import Card from '../../components/Card/Card';
+import Footer from '../../components/Footer/Footer';
 
 import heroRight from '../../Assets/hero-right.svg';
 import fig1 from '../../Assets/fig-1.svg';
@@ -61,6 +62,7 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
