@@ -7,10 +7,10 @@
 
 .big {
     position: absolute;
-    min-width: 15.625rem;
+    min-width: 19.625rem;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -50%);
 }
 
 .small {

@@ -20,23 +20,21 @@ const Auth = () => {
           </p>
           <form className="form-box">
             {isSignUp ? (
-              <div className="form-element">
+              <>
                 <h3>First Name</h3>
                 <input type="text" />
                 <h3>Last Name</h3>
                 <input type="text" />
-              </div>
+              </>
             ) : null}
 
-            <div className="form-element">
-              <h3>Email</h3>
-              <input type="Email" />
-            </div>
+            <h3>Phone Number</h3>
+            <input type="number" />
+            <h3>Email</h3>
+            <input type="Email" />
 
-            <div className="form-element">
-              <h3>Password</h3>
-              <input type="password" />
-            </div>
+            <h3>Password</h3>
+            <input type="password" />
           </form>
 
           <Button btnType="primary">

@@ -13,7 +13,7 @@ const Dashboard = () => {
       <NavBar />
 
       <section className="hero">
-        <div className="hero-left"></div>
+        <div className="hero-left">Customer Details</div>
         <div className="hero-right">
           <img className="hero-right-back" src={heroRight} alt="hero-right" />
           <img className="hero-right-front" src={fig1} alt="hero-right" />
@@ -31,9 +31,36 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </section>
+        <div className="course-bonus">
+          <h2>BONUS COURSES</h2>
+          <h1>Coming Soon...</h1>
+        </div>
+        <div className="social">
+          <h2>CONNECT US AT</h2>
+          <div className="social-content">
+            <a href="https://www.facebook.com/">
+              <img
+                src="https://img.icons8.com/fluent/80/000000/facebook-new.png"
+                alt="Facebook"
+              />
+            </a>
 
-      <section className="social">Social</section>
+            <a href="https://www.instagram.com/">
+              <img
+                src="https://img.icons8.com/fluent/80/000000/instagram-new.png"
+                alt="Instagram"
+              />
+            </a>
+
+            <a href="https://www.youtube.com/">
+              <img
+                src="https://img.icons8.com/color/80/000000/youtube-play.png"
+                alt="YouTube"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
