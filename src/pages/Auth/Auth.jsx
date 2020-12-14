@@ -21,9 +21,7 @@ const Auth = () => {
           <form className="form-box">
             {isSignUp ? (
               <>
-                <h3>First Name</h3>
-                <input type="text" />
-                <h3>Last Name</h3>
+                <h3>Name</h3>
                 <input type="text" />
               </>
             ) : null}
