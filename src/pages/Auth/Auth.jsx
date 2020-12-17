@@ -111,6 +111,10 @@ const Auth = () => {
             <Button
               btnType="secondary"
               clicked={() => {
+                setName('');
+                setPassword('');
+                setEmail('');
+                setNumber('');
                 isSignUp ? setIsSignUp(false) : setIsSignUp(true);
               }}
             >
