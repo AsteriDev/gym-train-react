@@ -14,7 +14,18 @@ const Dashboard = () => {
       <NavBar />
 
       <section className="hero">
-        <div className="hero-left">Customer Details</div>
+        <div className="hero-left">
+          <img
+            className="hero-left-image"
+            src="https://images.unsplash.com/photo-1607573278849-e45313536f23?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+            alt="UserImage"
+          />
+          <div className="hero-left-content">
+            <h2>Piyush Pandey</h2>
+            <p>piyushpandey@gmail.com</p>
+            <p>+91-9114182378</p>
+          </div>
+        </div>
         <div className="hero-right">
           <img className="hero-right-back" src={heroRight} alt="hero-right" />
           <img className="hero-right-front" src={fig1} alt="hero-right" />
@@ -32,35 +43,8 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="course-bonus">
-          <h2>BONUS COURSES</h2>
-          <h1>Coming Soon...</h1>
-        </div>
-        <div className="social">
-          <h2>CONNECT US AT</h2>
-          <div className="social-content">
-            <a href="https://www.facebook.com/">
-              <img
-                src="https://img.icons8.com/fluent/80/000000/facebook-new.png"
-                alt="Facebook"
-              />
-            </a>
 
-            <a href="https://www.instagram.com/">
-              <img
-                src="https://img.icons8.com/fluent/80/000000/instagram-new.png"
-                alt="Instagram"
-              />
-            </a>
-
-            <a href="https://www.youtube.com/">
-              <img
-                src="https://img.icons8.com/color/80/000000/youtube-play.png"
-                alt="YouTube"
-              />
-            </a>
-          </div>
-        </div>
+        <div className=""></div>
       </section>
       <Footer />
     </div>
