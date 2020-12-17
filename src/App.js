@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 
-import { AuthContext, AuthContextProvider } from './context/AuthContext';
+import { AuthContextProvider } from './context/AuthContext';
 import './App.css';
 import Auth from './pages/Auth/Auth';
 import Dashboard from './pages/Dashboard/Dashboard';
@@ -16,5 +16,4 @@ function App() {
     </AuthContextProvider>
   );
 }
-
 export default withRouter(App);

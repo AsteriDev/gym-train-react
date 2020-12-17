@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { auth } from '../../firebase';
 
@@ -16,7 +16,7 @@ const Auth = () => {
     email: [email, setEmail],
     password: [password, setPassword],
     number: [number, setNumber],
-    user: [user, setUser],
+    // user: [user, setUser],
   } = useContext(AuthContext);
 
   //! user
