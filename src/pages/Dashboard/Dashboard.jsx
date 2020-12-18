@@ -29,7 +29,7 @@ const Dashboard = () => {
             alt="UserImage"
           />
           <div className="hero-left-content">
-            <h2></h2>
+            <h2>Piyush Pandey</h2>
             <p>piyushpandey@gmail.com</p>
             <p>+91-9114182378</p>
           </div>
