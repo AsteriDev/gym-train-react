@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import { db } from '../../firebase';
+
 import NavBar from '../../components/NavBar/NavBar';
 import Card from '../../components/Card/Card';
 import Footer from '../../components/Footer/Footer';
@@ -9,10 +12,15 @@ import fig2 from '../../Assets/fig-2.svg';
 import './Dashboard.css';
 
 const Dashboard = () => {
+  useEffect(() => {
+    db.collection('users')
+      .get()
+      .then((snapshot) => console.log(snapshot.docs));
+  }, []);
+
   return (
     <div className="dashboard">
       <NavBar />
-
       <section className="hero">
         <div className="hero-left">
           <img
@@ -21,7 +29,7 @@ const Dashboard = () => {
             alt="UserImage"
           />
           <div className="hero-left-content">
-            <h2>Piyush Pandey</h2>
+            <h2></h2>
             <p>piyushpandey@gmail.com</p>
             <p>+91-9114182378</p>
           </div>

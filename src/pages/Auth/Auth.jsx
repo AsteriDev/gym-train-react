@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { auth } from '../../firebase';
+import { db, auth } from '../../firebase';
 
 import { AuthContext } from '../../context/AuthContext';
 import './Auth.css';
@@ -45,6 +45,11 @@ const Auth = () => {
         .catch((err) => {
           alert(err.message);
         });
+      db.collection('users').add({
+        name: name,
+        email: email,
+        number: number,
+      });
     } else {
       auth
         .signInWithEmailAndPassword(email, password)
