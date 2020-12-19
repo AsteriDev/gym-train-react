@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { db, auth } from '../../firebase';
 
@@ -16,23 +16,23 @@ const Auth = () => {
     email: [email, setEmail],
     password: [password, setPassword],
     number: [number, setNumber],
-    // user: [user, setUser],
+    user: [user, setUser],
   } = useContext(AuthContext);
 
   //! user
-  // useEffect(() => {
-  //   const unsubscribe = auth.onAuthStateChanged((authUser) => {
-  //     if (authUser) {
-  //       console.log(authUser);
-  //       setUser(authUser);
-  //     } else {
-  //       setUser(null);
-  //     }
-  //   });
-  //   return () => {
-  //     unsubscribe();
-  //   };
-  // }, [user]);
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        console.log(authUser);
+        setUser(authUser);
+      } else {
+        setUser(null);
+      }
+    });
+    return () => {
+      unsubscribe();
+    };
+  }, [setUser, user]);
 
   const authHandler = (event) => {
     event.preventDefault();
@@ -40,16 +40,19 @@ const Auth = () => {
       auth
         .createUserWithEmailAndPassword(email, password)
         .then((auth) => {
+          //! to store user data in collection at sign up
+          db.collection('users').doc(auth.user.uid).set({
+            name: name,
+            email: email,
+            number: number,
+          });
+        })
+        .then(() => {
           history.push('/dashboard');
         })
         .catch((err) => {
           alert(err.message);
         });
-      db.collection('users').add({
-        name: name,
-        email: email,
-        number: number,
-      });
     } else {
       auth
         .signInWithEmailAndPassword(email, password)
