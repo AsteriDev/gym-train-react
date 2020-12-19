@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 
 import { db } from '../../firebase';
+import { AuthContext } from '../../context/AuthContext';
 
 import NavBar from '../../components/NavBar/NavBar';
 import Card from '../../components/Card/Card';
@@ -12,11 +13,24 @@ import fig2 from '../../Assets/fig-2.svg';
 import './Dashboard.css';
 
 const Dashboard = () => {
+  const {
+    // isSignUp: [isSignUp, setIsSignUp],
+    name: [name, setName],
+    email: [email, setEmail],
+    number: [number, setNumber],
+    user: [user],
+  } = useContext(AuthContext);
+
   useEffect(() => {
     db.collection('users')
+      .doc(user.uid)
       .get()
-      .then((snapshot) => console.log(snapshot.docs));
-  }, []);
+      .then((response) => {
+        setName(response.data().name);
+        setEmail(response.data().email);
+        setNumber(response.data().number);
+      });
+  }, [setEmail, setName, setNumber, user]);
 
   return (
     <div className="dashboard">
@@ -29,9 +43,9 @@ const Dashboard = () => {
             alt="UserImage"
           />
           <div className="hero-left-content">
-            <h2>Piyush Pandey</h2>
-            <p>piyushpandey@gmail.com</p>
-            <p>+91-9114182378</p>
+            <h2>{name}</h2>
+            <p>{email}</p>
+            <p>{number}</p>
           </div>
         </div>
         <div className="hero-right">
