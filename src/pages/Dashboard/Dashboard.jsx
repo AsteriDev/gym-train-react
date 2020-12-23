@@ -1,4 +1,5 @@
 import React, { useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 import { db } from '../../firebase';
 import { AuthContext } from '../../context/AuthContext';
@@ -53,15 +54,18 @@ const Dashboard = () => {
           <img className="hero-right-front" src={fig1} alt="hero-right" />
         </div>
       </section>
-
       <section className="course">
         <div className="course-main">
           <img className="course-main-fig" src={fig2} alt="" />
           <div className="course-main-content">
             <h1>COURSES ENROLLED</h1>
             <div className="card-container">
-              <Card cardType="small">Card Courses</Card>
-              <Card cardType="small">Card Courses</Card>
+              <Link to={'/course'}>
+                <Card cardType="small">Card Courses</Card>
+              </Link>
+              <Link to={'/course'}>
+                <Card cardType="small">Card Courses</Card>
+              </Link>
             </div>
           </div>
         </div>
