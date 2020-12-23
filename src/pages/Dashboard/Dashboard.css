@@ -86,17 +86,19 @@
 
 .card-container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    gap: 4rem;
 }
 
-@media (max-width: 790px) {
+
+/* @media (max-width: 790px) {
     .card-container {
         flex-direction: column;
     }
-}
+} */
 
 .course h2 {
     letter-spacing: 6px;
