@@ -135,6 +135,10 @@
     font-size: 1.1rem;
 }
 
+.bottom {
+    text-align: center;
+}
+
 .bottom-fb {
     width: 25rem;
 }
