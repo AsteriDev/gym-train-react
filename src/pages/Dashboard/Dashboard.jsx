@@ -11,6 +11,7 @@ import Footer from '../../components/Footer/Footer';
 import heroRight from '../../Assets/hero-right.svg';
 import fig1 from '../../Assets/fig-1.svg';
 import fig2 from '../../Assets/fig-2.svg';
+import fb from '../../Assets/Fb-com.svg';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -132,6 +133,9 @@ const Dashboard = () => {
         </div>
         <div className=""></div>
       </section>
+      <div className="bottom">
+        <img src={fb} alt="fb-community" />
+      </div>
       <Footer />
     </div>
   );
