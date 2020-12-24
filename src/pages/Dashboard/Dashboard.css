@@ -1,0 +1,140 @@
+.hero {
+    display: flex;
+}
+
+.hero-left {
+    margin-right: 400px;
+    flex: 1;
+    text-align: center;
+    padding-top: 120px;
+}
+
+@media (max-width: 1200px) {
+    .hero-left {
+        margin-right: 250px;
+    }
+}
+
+.hero-left-image {
+    height: 15.65rem;
+    width: 15.65rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-left-content {
+    color: #3768ff;
+}
+
+.hero-right-back {
+    position: relative;
+    height: 500px;
+}
+
+.hero-right-front {
+    position: absolute;
+    top: 100px;
+    right: 160px;
+    height: 320px;
+    z-index: 1;
+}
+
+@media (max-width: 1100px) {
+    .hero-left {
+        margin-right: 0;
+    }
+    .hero-right {
+        display: none;
+    }
+    .course-main-fig {
+        display: none;
+    }
+}
+
+.course {
+    text-align: center;
+}
+
+.course-main {
+    margin: 4rem 2.5rem;
+    padding: 3.75rem;
+    background: linear-gradient(271.34deg, #2b5eff 3.58%, #48bdff 98.86%);
+    box-shadow: 0px 0px 2.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-main-fig {
+    height: 400px;
+}
+
+.course-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.course-bonus {
+    margin-top: 2rem;
+}
+
+.course h1 {
+    margin-top: 0;
+    letter-spacing: 6px;
+    color: white;
+    font-weight: 500;
+    font-size: 2.375rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.card-link {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.4s ease-out;
+}
+
+.card-link:active {
+    color: black;
+}
+
+.card-link:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    border-radius: 1.875rem 1.875rem 0 0;
+    height: 8rem;
+    width: 12rem;
+}
+
+.card-description {
+    margin: 0 0 0.2rem 0;
+    font-size: 0.8rem;
+}
+
+.card-title {
+    margin: 0.6rem 0 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+.bottom-fb {
+    width: 25rem;
+}

@@ -1,0 +1,19 @@
+.btn {
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.primary {
+    border-radius: 50px;
+    padding: 0.625rem 3.75rem;
+    color: white;
+    background-color: #3768ff;
+}
+
+.secondary {
+    color: #3768ff;
+    background-color: transparent;
+}
