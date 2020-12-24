@@ -134,7 +134,7 @@ const Dashboard = () => {
         <div className=""></div>
       </section>
       <div className="bottom">
-        <img src={fb} alt="fb-community" />
+        <img className="bottom-fb" src={fb} alt="fb-community" />
       </div>
       <Footer />
     </div>

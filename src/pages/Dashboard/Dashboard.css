@@ -108,10 +108,15 @@
 .card-link {
     text-decoration: none;
     color: black;
+    transition: transform 0.4s ease-out;
 }
 
 .card-link:active {
     color: black;
+}
+
+.card-link:hover {
+    transform: scale(1.05);
 }
 
 .card-image {
@@ -128,4 +133,10 @@
 .card-title {
     margin: 0.6rem 0 0.8rem 0;
     font-size: 1.1rem;
+}
+
+.bottom {}
+
+.bottom-fb {
+    width: 25rem;
 }
