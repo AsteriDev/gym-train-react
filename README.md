@@ -2,7 +2,7 @@
 
 `This website is in development.`
 
-Link - https://angry-curie-810c26.netlify.app/
+Link - https://eager-thompson-7537b9.netlify.app/
 
 ## Available Scripts
 
