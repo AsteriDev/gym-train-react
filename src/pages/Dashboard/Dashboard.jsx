@@ -57,7 +57,6 @@ const Dashboard = () => {
       </section>
       <section className="course">
         <div className="course-main">
-          <img className="course-main-fig" src={fig2} alt="" />
           <div className="course-container">
             <div className="course-main-content">
               <h1>COURSES ENROLLED</h1>
@@ -131,7 +130,6 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className=""></div>
       </section>
       <div className="bottom">
         <img className="bottom-fb" src={fb} alt="fb-community" />
