@@ -93,7 +93,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <img src={plus} alt="" />
+        <img className="plus" src={plus} alt="plus-sign" />
         <div className="course-bonus">
           <h1>BONUS COURSES</h1>
           <div className="card-container">
