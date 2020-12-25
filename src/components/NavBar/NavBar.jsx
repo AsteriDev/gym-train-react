@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { auth } from '../../firebase';
 
 import { AuthContext } from '../../context/AuthContext';
@@ -28,24 +28,6 @@ const NavBar = (props) => {
   return (
     <div className="nav">
       <div className="nav-logo">LOGO...</div>
-      <div className="nav-items">
-        <NavLink
-          exact
-          className="nav-item"
-          activeClassName="nav-active"
-          to={'/dashboard'}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          exact
-          className="nav-item"
-          activeClassName="nav-active"
-          to={'/about'}
-        >
-          About
-        </NavLink>
-      </div>
       <div className="nav-logout">
         <Button btnType="primary" clicked={logout}>
           Log Out

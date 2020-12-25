@@ -12,6 +12,9 @@ import heroRight from '../../Assets/hero-right.svg';
 import fig1 from '../../Assets/fig-1.svg';
 import fb from '../../Assets/Fb-com.svg';
 import plus from '../../Assets/plus.svg';
+// import fbLogo from '../../Assets/fb-logo.svg';
+// import instLogo from '../../Assets/insta-logo.svg';
+// import twLogo from '../../Assets/tw-logo.svg';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -132,6 +135,11 @@ const Dashboard = () => {
       </section>
       <div className="bottom">
         <img className="bottom-fb" src={fb} alt="fb-community" />
+        {/* <div className="bottom-social">
+          <img className="logo fb" src={fbLogo} alt="fb-logo" />
+          <img className="logo insta" src={instLogo} alt="insta-logo" />
+          <img className="logo tw" src={twLogo} alt="twitter-logo" />
+        </div> */}
       </div>
       <Footer />
     </div>
