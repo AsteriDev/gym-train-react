@@ -1,6 +1,27 @@
 .footer {
     padding: 3rem;
-    color: #fff;
-    background-color: #263666;
+    color: #a2aed2;
+    background-color: #071541;
     text-align: center;
+}
+
+.footer h2 {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    color: #a2aed2;
+    margin: 0 20px;
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+.logo:hover {
+    color: #3768ff;
 }

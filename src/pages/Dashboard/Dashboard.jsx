@@ -12,9 +12,6 @@ import heroRight from '../../Assets/hero-right.svg';
 import fig1 from '../../Assets/fig-1.svg';
 import fb from '../../Assets/Fb-com.svg';
 import plus from '../../Assets/plus.svg';
-// import fbLogo from '../../Assets/fb-logo.svg';
-// import instLogo from '../../Assets/insta-logo.svg';
-// import twLogo from '../../Assets/tw-logo.svg';
 import './Dashboard.css';
 
 const Dashboard = () => {
