@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import { db } from '../../firebase';
 import { AuthContext } from '../../context/AuthContext';
@@ -36,6 +37,9 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
+      <Helmet>
+        <title>Dashboard</title>
+      </Helmet>
       <NavBar />
       <section className="hero">
         <div className="hero-left">
