@@ -55,10 +55,35 @@ const Dashboard = () => {
           <img className="hero-right-front" src={fig1} alt="hero-right" />
         </div>
       </section>
-      <section className="course">
-        <div className="course-main">
-          <div className="course-main-content">
-            <h1>COURSES ENROLLED</h1>
+      <section className="course-container">
+        <h1>PROGRAMS</h1>
+        <div className="course">
+          <div className="course-main">
+            <div className="course-main-content">
+              <div className="card-container">
+                <Link className="card-link" to={'/course'}>
+                  <Card cardType="small">
+                    <img
+                      className="card-image"
+                      src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                      alt=""
+                    />
+                    <div className="card-heading">
+                      <p className="card-title">30 day fitness</p>
+                      <p className="card-tag">OPEN</p>
+                    </div>
+                    <p className="card-description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis fugit culpa aliquid amet necessitatibus
+                      deleniti ipsa ipsum expedita.
+                    </p>
+                  </Card>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <img className="plus" src={plus} alt="plus-sign" />
+          <div className="course-bonus">
             <div className="card-container">
               <Link className="card-link" to={'/course'}>
                 <Card cardType="small">
@@ -67,7 +92,10 @@ const Dashboard = () => {
                     src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
                     alt=""
                   />
-                  <p className="card-title">30 day fitness</p>
+                  <div className="card-heading">
+                    <p className="card-title">30 day fitness</p>
+                    <p className="card-tag">JOIN</p>
+                  </div>
                   <p className="card-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reiciendis fugit culpa aliquid amet necessitatibus deleniti
@@ -82,7 +110,10 @@ const Dashboard = () => {
                     src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
                     alt=""
                   />
-                  <p className="card-title">30 day fitness</p>
+                  <div className="card-heading">
+                    <p className="card-title">30 day fitness</p>
+                    <p className="card-tag">BONUS</p>
+                  </div>
                   <p className="card-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reiciendis fugit culpa aliquid amet necessitatibus deleniti
@@ -93,50 +124,9 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <img className="plus" src={plus} alt="plus-sign" />
-        <div className="course-bonus">
-          <h1>BONUS COURSES</h1>
-          <div className="card-container">
-            <Link className="card-link" to={'/course'}>
-              <Card cardType="small">
-                <img
-                  className="card-image"
-                  src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-                  alt=""
-                />
-                <p className="card-title">30 day fitness</p>
-                <p className="card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis fugit culpa aliquid amet necessitatibus deleniti
-                  ipsa ipsum expedita.
-                </p>
-              </Card>
-            </Link>
-            <Link className="card-link" to={'/course'}>
-              <Card cardType="small">
-                <img
-                  className="card-image"
-                  src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-                  alt=""
-                />
-                <p className="card-title">30 day fitness</p>
-                <p className="card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis fugit culpa aliquid amet necessitatibus deleniti
-                  ipsa ipsum expedita.
-                </p>
-              </Card>
-            </Link>
-          </div>
-        </div>
       </section>
       <div className="bottom">
         <img className="bottom-fb" src={fb} alt="fb-community" />
-        {/* <div className="bottom-social">
-          <img className="logo fb" src={fbLogo} alt="fb-logo" />
-          <img className="logo insta" src={instLogo} alt="insta-logo" />
-          <img className="logo tw" src={twLogo} alt="twitter-logo" />
-        </div> */}
       </div>
       <Footer />
     </div>

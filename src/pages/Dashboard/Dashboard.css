@@ -55,15 +55,27 @@
     z-index: 1;
 }
 
+.course-container {}
+
 .course {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 4rem 1rem 2rem 1rem;
+    margin: 3rem 1rem 2rem 1rem;
     align-items: center;
 }
 
+.course-container h1 {
+    text-align: center;
+    margin: 2rem 0 0 0;
+    letter-spacing: 6px;
+    color: #2b5eff;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
 .course-main {
+    min-width: 23.75rem;
     padding: 3.75rem;
     background: linear-gradient(271.34deg, #2b5eff 3.58%, #48bdff 98.86%);
     box-shadow: 0px 0px 2.5rem rgba(0, 0, 0, 0.3);
@@ -75,22 +87,6 @@
 .course-bonus {
     text-align: center;
     margin-bottom: 4rem;
-}
-
-.course-main h1 {
-    margin-top: 0;
-    letter-spacing: 6px;
-    color: white;
-    font-weight: 500;
-    font-size: 2.375rem;
-}
-
-.course-bonus h1 {
-    margin-top: 2rem;
-    letter-spacing: 6px;
-    color: #2b5eff;
-    font-weight: 500;
-    font-size: 2.375rem;
 }
 
 .plus {
@@ -122,8 +118,14 @@
 
 .card-image {
     border-radius: 1.875rem 1.875rem 0 0;
-    height: 8rem;
-    width: 12rem;
+    height: 10rem;
+    width: 14rem;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .card-description {
@@ -134,6 +136,14 @@
 .card-title {
     margin: 0.6rem 0 0.8rem 0;
     font-size: 1.1rem;
+}
+
+.card-tag {
+    color: white;
+    margin: 0;
+    background-color: #2b5eff;
+    padding: 5px 12px;
+    border-radius: 12px;
 }
 
 .bottom {
@@ -193,6 +203,9 @@
         height: 140px;
         max-width: 340px;
         margin: 100px 30px 20px 30px;
+    }
+    .course-main {
+        min-width: 12.5rem;
     }
 }
 
