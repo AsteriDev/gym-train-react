@@ -55,8 +55,6 @@
     z-index: 1;
 }
 
-.course-container {}
-
 .course {
     display: flex;
     flex-direction: row;
@@ -74,7 +72,7 @@
     font-size: 3.2rem;
 }
 
-.course-main {
+.course-bonus {
     min-width: 23.75rem;
     padding: 3.75rem;
     background: linear-gradient(271.34deg, #2b5eff 3.58%, #48bdff 98.86%);
@@ -84,7 +82,7 @@
     margin-bottom: 2rem;
 }
 
-.course-bonus {
+.course-main {
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -204,13 +202,8 @@
         max-width: 340px;
         margin: 100px 30px 20px 30px;
     }
-    .course-main {
+    .course-bonus {
         min-width: 12.5rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .course-main {
-        padding: 2rem;
+        padding: 1.6rem;
     }
 }
