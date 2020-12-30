@@ -8,8 +8,11 @@
     margin: 1rem 5rem;
     font-size: 1.4rem;
     text-decoration: none;
-    width: 100%;
     color: #3768ff;
+}
+
+.course-card {
+    padding: 0.4rem 1rem;
 }
 
 .course-main-container {
@@ -25,7 +28,46 @@
     border-radius: 50px;
 }
 
+.course-list h1 {
+    color: #fff;
+}
+
+.course-player-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.course-player-heading {
+    color: #3768ff;
+    margin: 0;
+}
+
+.course-player-progress {
+    font-size: 1.4rem;
+    color: #3768ff;
+}
+
+.course-player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .player {
-    width: 840px;
-    height: 480px;
+    width: 960px;
+    height: 540px;
+}
+
+.controls {
+    font-size: 1.4rem;
+    color: #3768ff;
+}
+
+.mac {
+    padding: 0.6rem 1rem;
+    color: #fff;
+    background: #3768ff;
+    border-radius: 10px;
 }

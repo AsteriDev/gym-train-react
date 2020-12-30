@@ -18,8 +18,10 @@ const Course = (props) => {
         </Link>
         <div className="course-main-container">
           <div className="course-list">
-            <h1 className="course-list-title">30 days training</h1>
-            <Card>1. Introduction</Card>
+            <h1>30 days training</h1>
+            <Card>
+              <div className="course-card">1. Introduction</div>
+            </Card>
           </div>
           <div className="course-player">
             <div className="course-player-title">
@@ -34,6 +36,11 @@ const Course = (props) => {
                 height="100%"
                 width="100%"
               />
+            </div>
+            <div className="course-player-controls">
+              <p className="controls">&lt; Prev</p>
+              <p className="mac">Mark as Complete</p>
+              <p className="controls">Next &gt;</p>
             </div>
           </div>
         </div>
