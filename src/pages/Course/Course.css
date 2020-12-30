@@ -16,14 +16,15 @@
 }
 
 .course-main-container {
-    margin: 2rem 4rem;
+    margin: 0 4rem;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
 
 .course-list {
-    padding: 1rem 2rem;
+    margin-top: 4rem;
+    padding: 0 2rem;
     background: linear-gradient(90deg, #3768ff 7.46%, #547eff 82.34%);
     border-radius: 50px;
 }
