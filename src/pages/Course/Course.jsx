@@ -9,6 +9,8 @@ import Footer from '../../components/Footer/Footer';
 import Card from '../../components/Card/Card';
 
 const Course = (props) => {
+  // const [done, setDone] = useState(70);
+  const done = 50;
   return (
     <div>
       <NavBar />
@@ -19,20 +21,25 @@ const Course = (props) => {
         <div className="course-main-container">
           <div className="course-list">
             <h1>30 days training</h1>
+            <p>Your Progress</p>
+            <div className="progress">
+              <div
+                className="progress-done"
+                style={{ opacity: 1, width: `${done}%` }}
+              >
+                {done}%
+              </div>
+            </div>
             <Card>
               <div className="course-card">1. Introduction</div>
             </Card>
           </div>
           <div className="course-player">
-            <div className="course-player-title">
-              <h1 className="course-player-heading">1. Introduction</h1>
-              <div className="course-player-progress">Your Progress</div>
-            </div>
+            <h1 className="course-player-heading">1. Introduction</h1>
             <div className="player">
               <ReactPlayer
                 url="https://vimeo.com/194555118"
                 controls={true}
-                light={true}
                 height="100%"
                 width="100%"
               />
