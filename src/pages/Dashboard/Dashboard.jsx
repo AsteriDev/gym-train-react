@@ -17,7 +17,6 @@ import './Dashboard.css';
 
 const Dashboard = () => {
   const {
-    // isSignUp: [isSignUp, setIsSignUp],
     name: [name, setName],
     email: [email, setEmail],
     number: [number, setNumber],
