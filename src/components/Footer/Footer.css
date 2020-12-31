@@ -1,5 +1,5 @@
 .footer {
-    padding: 3rem;
+    padding: 3rem 6rem;
     color: #a2aed2;
     background-color: #071541;
     text-align: center;
@@ -24,4 +24,36 @@
 
 .logo:hover {
     color: #3768ff;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top a {
+    font-size: 0.8rem;
+    color: #a2aed2;
+    text-decoration: none;
+}
+
+.footer-logo {
+    font-size: 1.6rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+@media (max-width: 550px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-content {
+        justify-content: center;
+        gap: 2rem;
+    }
 }

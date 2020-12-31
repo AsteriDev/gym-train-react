@@ -37,7 +37,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <Helmet>
-        <title>Dashboard</title>
+        <title>LiveFitt - Dashboard</title>
       </Helmet>
       <NavBar />
       <section className="hero">

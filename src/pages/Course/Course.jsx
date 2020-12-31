@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactPlayer from 'react-player';
+import { Helmet } from 'react-helmet';
 
 import './Course.css';
 
@@ -12,7 +13,10 @@ const Course = (props) => {
   // const [done, setDone] = useState(70);
   const done = 50;
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>LiveFitt - Course</title>
+      </Helmet>
       <NavBar />
       <main className="course-page">
         <Link className="course-link" to={'/dashboard'}>
@@ -53,7 +57,7 @@ const Course = (props) => {
         </div>
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
