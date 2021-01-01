@@ -25,7 +25,6 @@ const Course = (props) => {
         <div className="course-main-container">
           <div className="course-list">
             <h1>30 days training</h1>
-            <p>Your Progress</p>
             <div className="progress">
               <div
                 className="progress-done"

@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-logo">LOGO</div>
         <div className="footer-content">
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
+          <a href="https://google.com">Terms & Conditions</a>
+          <a href="https://google.com">Privacy Policy</a>
         </div>
       </div>
 
