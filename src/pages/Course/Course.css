@@ -11,8 +11,18 @@
     color: #3768ff;
 }
 
+.course-list-content {
+    overflow-y: scroll;
+    height: 74%;
+}
+
+.course-list-content::-webkit-scrollbar-thumb {
+    background-color: #ffffff73;
+}
+
 .course-card {
     padding: 0.4rem 1rem;
+    margin-bottom: 1.4rem;
 }
 
 .course-main-container {
@@ -24,8 +34,8 @@
 }
 
 .course-list {
-    height: 620px;
-    width: 300px;
+    height: 600px;
+    width: 400px;
     margin-top: 4rem;
     padding: 0 2rem;
     background: linear-gradient(90deg, #3768ff 7.46%, #547eff 82.34%);
@@ -84,7 +94,7 @@
 }
 
 .player {
-    width: 960px;
+    width: 900px;
     height: 540px;
 }
 
@@ -100,9 +110,16 @@
     border-radius: 10px;
 }
 
+@media (max-width: 1400px) {
+    .player {
+        width: 700px;
+        height: 420px;
+    }
+}
+
 @media (max-width: 1300px) {
     .player {
-        width: 745px;
+        width: 650px;
         height: 420px;
     }
 }
@@ -111,9 +128,6 @@
     .player {
         width: 640px;
         height: 360px;
-    }
-    .course-list {
-        height: 550px;
     }
 }
 
@@ -126,7 +140,6 @@
     .course-list {
         margin-top: 0;
         width: 80%;
-        height: 300px;
     }
     .player {
         width: 745px;
@@ -149,6 +162,9 @@
         width: 485px;
         height: 275px;
     }
+    .course-list {
+        height: 400px;
+    }
 }
 
 @media (max-width: 548px) {
@@ -158,6 +174,12 @@
     .player {
         width: 420px;
         height: 250px;
+    }
+    .course-list {
+        height: 250px;
+    }
+    .course-list-content {
+        height: 60%;
     }
 }
 

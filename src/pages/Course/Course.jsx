@@ -33,9 +33,44 @@ const Course = (props) => {
                 {done}%
               </div>
             </div>
-            <Card>
-              <div className="course-card">1. Introduction</div>
-            </Card>
+            <div className="course-list-content">
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+            </div>
           </div>
           <div className="course-player">
             <h1 className="course-player-heading">1. Introduction</h1>
