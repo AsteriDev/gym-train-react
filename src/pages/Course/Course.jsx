@@ -87,7 +87,37 @@ const Course = (props) => {
               <p className="mac">Mark as Complete</p>
               <p className="controls">Next &gt;</p>
             </div>
+            <div className="course-resourse">
+              <h1>Resourses</h1>
+              <Card>
+                <div className="course-resourse-content">
+                  <div className="resourse">
+                    <a href="https://www.google.com" className="resourse-link">
+                      Resourse Link
+                    </a>
+                    <p className="resourse-desc">
+                      Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+                      sit amet Lorem Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Amet architecto inventore quaerat quis
+                    </p>
+                  </div>
+                  <div className="resourse">
+                    <a href="https://www.google.com" className="resourse-link">
+                      Resourse Link
+                    </a>
+                    <p className="resourse-desc">
+                      Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+                      sit amet Lorem Lorem ipsum dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
+        </div>
+        <div className="course-comment-container">
+          <h1>Comments</h1>
+          <textarea placeholder="Comment here"></textarea>
         </div>
       </main>
       <Footer />
