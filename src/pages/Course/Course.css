@@ -34,8 +34,8 @@
 }
 
 .course-list {
-    height: 600px;
-    width: 400px;
+    height: 610px;
+    width: 360px;
     margin-top: 4rem;
     padding: 0 2rem;
     background: linear-gradient(90deg, #3768ff 7.46%, #547eff 82.34%);
@@ -95,7 +95,7 @@
 }
 
 .player {
-    width: 900px;
+    width: 980px;
     height: 540px;
 }
 
@@ -154,6 +154,7 @@
 .course-comment-container {
     text-align: center;
     margin: auto;
+    margin-bottom: 2rem;
 }
 
 .course-comment-container h1 {
@@ -161,17 +162,21 @@
     font-weight: normal;
 }
 
+textarea {
+    font-size: 1rem;
+}
+
 @media (max-width: 1400px) {
     .player {
         width: 700px;
-        height: 420px;
+        height: 400px;
     }
 }
 
 @media (max-width: 1300px) {
     .player {
         width: 650px;
-        height: 420px;
+        height: 370px;
     }
     .course-resourse {
         width: 500px;
@@ -180,8 +185,8 @@
 
 @media (max-width: 1200px) {
     .player {
-        width: 640px;
-        height: 360px;
+        width: 580px;
+        height: 330px;
     }
 }
 
@@ -192,6 +197,7 @@
         flex-direction: column-reverse;
     }
     .course-list {
+        align-self: center;
         margin-top: 0;
         width: 80%;
     }

@@ -70,6 +70,27 @@ const Course = (props) => {
               <Card>
                 <div className="course-card">1. Introduction</div>
               </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
+              <Card>
+                <div className="course-card">1. Introduction</div>
+              </Card>
             </div>
           </div>
           <div className="course-player">
@@ -117,7 +138,7 @@ const Course = (props) => {
         </div>
         <div className="course-comment-container">
           <h1>Comments</h1>
-          <textarea placeholder="Comment here"></textarea>
+          <textarea rows="3" cols="60" placeholder="Comment here"></textarea>
         </div>
       </main>
       <Footer />
