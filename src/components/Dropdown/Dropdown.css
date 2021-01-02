@@ -1,0 +1,26 @@
+.dropdown {
+    position: absolute;
+    top: 70px;
+    width: 160px;
+    transform: translateX(-45%);
+    background-color: #3769ff;
+    border-radius: 10px;
+    padding: 0.4rem;
+    overflow: hidden;
+    transition: height 500ms ease;
+}
+
+.menu-item {
+    margin: 0.4rem;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: 500ms;
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.menu-item:hover {
+    background-color: #2343a4;
+}

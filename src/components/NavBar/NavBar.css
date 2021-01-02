@@ -14,33 +14,26 @@
 .nav-logo {
     padding-left: 6rem;
     font-size: 1.5rem;
-    /* flex: 0.2; */
 }
 
-.nav-items {
-    flex: 0.4;
-    display: flex;
-    justify-content: space-around;
-    z-index: 1002;
-}
-
-@media (max-width: 1100px) {
-    .nav-items {
-        flex: 0.58;
-    }
-}
-
-.nav-item {
-    font-size: 1.375rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-.nav-active {
-    border-bottom: 0.2rem solid #3768ff;
-}
-
-.nav-logout {
+.nav-dropdown {
     padding-right: 4rem;
     z-index: 1001;
+}
+
+.icon-button {
+    font-size: 2.2rem;
+    background-color: #3768ff;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    filter: brightness(0.8);
 }
