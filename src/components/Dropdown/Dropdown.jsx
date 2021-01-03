@@ -31,6 +31,8 @@ const Dropdown = () => {
   return (
     <div className="dropdown">
       <DropdownItem>Edit Profile</DropdownItem>
+      <DropdownItem>Settings</DropdownItem>
+      <DropdownItem>Help & Support</DropdownItem>
       <DropdownItem>
         <p style={{ cursor: 'pointer' }} onClick={logout}>
           Log out

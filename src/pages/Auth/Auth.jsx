@@ -16,6 +16,7 @@ const Auth = () => {
     email: [email, setEmail],
     password: [password, setPassword],
     number: [number, setNumber],
+    //! user to check if the user is logged in or not
     user: [user, setUser],
   } = useContext(AuthContext);
 
@@ -74,14 +75,17 @@ const Auth = () => {
             into LiveFitt
           </p>
           <form className="form-box">
+            {/*Only visible when User signup*/}
             {isSignUp ? (
               <>
+                {/*Name filed*/}
                 <h3>Name</h3>
                 <input
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
+                {/*Phone Number filed*/}
                 <h3>Phone Number</h3>
                 <input
                   type="number"
@@ -90,6 +94,7 @@ const Auth = () => {
                 />
               </>
             ) : null}
+            {/*Email filed*/}
 
             <h3>Email</h3>
             <input
@@ -97,7 +102,7 @@ const Auth = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-
+            {/*Password filed*/}
             <h3>Password</h3>
             <input
               type="password"
@@ -105,7 +110,7 @@ const Auth = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </form>
-
+          {/*Login button*/}
           <Button btnType="primary">
             <Link className="link" onClick={authHandler}>
               {isSignUp ? 'Sign Up' : 'Log In'}
@@ -116,6 +121,7 @@ const Auth = () => {
             <h3>
               {isSignUp ? 'Already have an account?' : "Don't have an Account?"}
             </h3>
+            {/*Button to change signup or login*/}
             <Button
               btnType="secondary"
               clicked={() => {
