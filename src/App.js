@@ -14,7 +14,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/auth" exact component={Auth} />
       <Route path="/dashboard" component={Dashboard} />
-      <Route path="/course" component={Course} />
+      <Route path="/course/:id" component={Course} />
     </AuthContextProvider>
   );
 }

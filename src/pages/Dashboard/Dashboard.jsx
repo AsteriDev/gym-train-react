@@ -15,6 +15,8 @@ import fb from '../../Assets/Fb-com.svg';
 import plus from '../../Assets/plus.svg';
 import './Dashboard.css';
 
+import { courses } from '../../data/dummy-data';
+
 const Dashboard = () => {
   const {
     name: [name, setName],
@@ -63,65 +65,53 @@ const Dashboard = () => {
         <div className="course">
           <div className="course-main">
             <div className="card-container">
-              <Link className="card-link" to={'/course'}>
-                <Card cardType="small">
-                  <img
-                    className="card-image"
-                    src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-                    alt=""
-                  />
-                  <div className="card-heading">
-                    <p className="card-title">30 day fitness</p>
-                    <p className="card-tag">OPEN</p>
-                  </div>
-                  <p className="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis fugit culpa aliquid amet necessitatibus deleniti
-                    ipsa ipsum expedita.
-                  </p>
-                </Card>
-              </Link>
+              {courses.map((data) => {
+                if (data.type === 'free') {
+                  return (
+                    <Link className="card-link" to={`course/${data.id}`}>
+                      <Card cardType="small">
+                        <img
+                          className="card-image"
+                          src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                          alt=""
+                        />
+                        <div className="card-heading">
+                          <p className="card-title">{data.title}</p>
+                          <p className="card-tag">OPEN</p>
+                        </div>
+                        <p className="card-description">{data.description}</p>
+                      </Card>
+                    </Link>
+                  );
+                }
+                return null;
+              })}
             </div>
           </div>
           <img className="plus" src={plus} alt="plus-sign" />
           <div className="course-bonus">
             <div className="card-container">
-              <Link className="card-link" to={'/course'}>
-                <Card cardType="small">
-                  <img
-                    className="card-image"
-                    src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-                    alt=""
-                  />
-                  <div className="card-heading">
-                    <p className="card-title">30 day fitness</p>
-                    <p className="card-tag">JOIN</p>
-                  </div>
-                  <p className="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis fugit culpa aliquid amet necessitatibus deleniti
-                    ipsa ipsum expedita.
-                  </p>
-                </Card>
-              </Link>
-              <Link className="card-link" to={'/course'}>
-                <Card cardType="small">
-                  <img
-                    className="card-image"
-                    src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-                    alt=""
-                  />
-                  <div className="card-heading">
-                    <p className="card-title">30 day fitness</p>
-                    <p className="card-tag">BONUS</p>
-                  </div>
-                  <p className="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis fugit culpa aliquid amet necessitatibus deleniti
-                    ipsa ipsum expedita.
-                  </p>
-                </Card>
-              </Link>
+              {courses.map((data) => {
+                if (data.type !== 'free') {
+                  return (
+                    <Link className="card-link" to={`course/${data.id}`}>
+                      <Card cardType="small">
+                        <img
+                          className="card-image"
+                          src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                          alt=""
+                        />
+                        <div className="card-heading">
+                          <p className="card-title">{data.title}</p>
+                          <p className="card-tag">JOIN</p>
+                        </div>
+                        <p className="card-description">{data.description} </p>
+                      </Card>
+                    </Link>
+                  );
+                }
+                return null;
+              })}
             </div>
           </div>
         </div>
