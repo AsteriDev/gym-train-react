@@ -1,18 +1,31 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import ReactPlayer from 'react-player';
+
 import './Home.css';
 
 const Home = () => {
   const [clicked, setClicked] = useState(false);
+  const [sticky, setSticky] = useState(false);
 
   const clickHandler = () => {
     setClicked(!clicked);
   };
 
+  const stickyNav = () => {
+    if (window.scrollY >= 500) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  window.addEventListener('scroll', stickyNav);
+
   return (
     <>
-      <nav class="home-nav">
+      <nav class={sticky ? 'sticky home-nav' : 'home-nav'}>
         <NavLink class="home-nav-logo" to="/">
           LOGO
         </NavLink>
@@ -34,7 +47,10 @@ const Home = () => {
           </NavLink>
         </div>
       </nav>
-      <header>Header</header>
+      <header className="home-header">
+        <ReactPlayer url="https://vimeo.com/63804783" />
+        <div className="home-form">afakf</div>
+      </header>
     </>
   );
 };

@@ -5,23 +5,31 @@
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    padding: 0 6rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .home-nav-logo {
     font-size: 2rem;
     color: #fff;
     text-decoration: none;
+    margin-left: 6rem;
 }
 
 .home-nav-icon {
     cursor: pointer;
     display: none;
+    margin-right: 6rem;
 }
 
 .home-nav-menu {
     display: flex;
     gap: 1rem;
+    margin-right: 6rem;
 }
 
 .home-nav-link {
@@ -37,6 +45,7 @@
 }
 
 .home-nav-login {
+    font-weight: bold;
     text-decoration: none;
     padding: 0.5rem 2rem;
     background-color: #fff;
@@ -60,14 +69,13 @@
         position: absolute;
         top: 60px;
         left: 0;
-        transform: translateY(-240px);
+        transform: translateY(-310px);
         opacity: 0;
         transition: all 0.4s ease;
         text-align: center;
     }
     .home-nav-menu.active {
         background-color: #6668f4;
-        left: 0;
         transform: translateY(0);
         opacity: 1;
     }
@@ -83,4 +91,11 @@
         font-size: 2rem;
         border-radius: 5px;
     }
+}
+
+.home-header {
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    margin: 8rem;
 }
