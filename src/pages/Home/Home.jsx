@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 import ReactPlayer from 'react-player';
 
+import Card from '../../components/Card/Card';
+
 import './Home.css';
 
 const Home = () => {
@@ -49,7 +51,28 @@ const Home = () => {
       </nav>
       <header className="home-header">
         <ReactPlayer url="https://vimeo.com/63804783" />
-        <div className="home-form">afakf</div>
+        <Card>
+          <div className="home-form">
+            <div className="form-container">
+              <input type="text" required />
+              <label htmlFor="name" className="form-label">
+                <span className="form-name">Name</span>
+              </label>
+            </div>
+            <div className="form-container">
+              <input type="email" required />
+              <label htmlFor="name" className="form-label">
+                <span className="form-name">Email</span>
+              </label>
+            </div>
+            <div className="form-container">
+              <input type="numeric" required />
+              <label htmlFor="name" className="form-label">
+                <span className="form-name">Number</span>
+              </label>
+            </div>
+          </div>
+        </Card>
       </header>
     </>
   );
