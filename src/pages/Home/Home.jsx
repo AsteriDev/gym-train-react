@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import ReactPlayer from 'react-player';
-import Slider from 'react-slick';
 import Card from '../../components/Card/Card';
-import { Testimonial } from '../../data/dummy-data';
 
 import './Home.css';
 
