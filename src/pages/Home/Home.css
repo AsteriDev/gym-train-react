@@ -17,7 +17,7 @@
     font-size: 2rem;
     color: #fff;
     text-decoration: none;
-    margin-left: 6rem;
+    margin-left: 10rem;
 }
 
 .home-nav-icon {
@@ -29,7 +29,7 @@
 .home-nav-menu {
     display: flex;
     gap: 1rem;
-    margin-right: 6rem;
+    margin-right: 10rem;
 }
 
 .home-nav-link {
@@ -57,7 +57,7 @@
     color: #fff;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .home-nav-icon {
         display: block;
         font-size: 2rem;
@@ -69,10 +69,11 @@
         position: absolute;
         top: 60px;
         left: 0;
-        transform: translateY(-310px);
+        transform: translateY(-360px);
         opacity: 0;
         transition: all 0.4s ease;
         text-align: center;
+        z-index: 10;
     }
     .home-nav-menu.active {
         background-color: #6668f4;
@@ -95,7 +96,7 @@
 
 .home-header {
     display: flex;
-    margin: 6rem 8rem;
+    margin: 6rem 10rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -159,4 +160,21 @@
 .form-container input:focus+.form-label::after,
 .form-container input:valid+.form-label::after {
     transform: translateY(0);
+}
+
+@media screen and (max-width: 1200px) {
+    .home-nav-logo {
+        margin-left: 6rem;
+    }
+    .home-nav-menu {
+        margin-right: 6rem;
+    }
+    .home-header {
+        margin: 6rem 6rem;
+    }
+}
+
+.testi-img {
+    width: 20px;
+    height: 20px;
 }

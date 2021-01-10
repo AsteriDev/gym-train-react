@@ -62,3 +62,22 @@ export const courses = [
     ],
   },
 ];
+
+export const Testimonial = [
+  {
+    title: 'T01',
+    url: 'https://images.unsplash.com/photo-1610047803562-7260ebe516cc',
+  },
+  {
+    title: 'T02',
+    url: 'https://images.unsplash.com/photo-1609972844913-e3308fde41d3',
+  },
+  {
+    title: 'T03',
+    url: 'http://images.unsplash.com/photo-1609952048180-7b35ea6b083b',
+  },
+  {
+    title: 'T04',
+    url: 'https://images.unsplash.com/photo-1608749769135-cdc495ef90ac',
+  },
+];

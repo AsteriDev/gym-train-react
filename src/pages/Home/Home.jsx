@@ -2,14 +2,23 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import ReactPlayer from 'react-player';
-
+import Slider from 'react-slick';
 import Card from '../../components/Card/Card';
+import { Testimonial } from '../../data/dummy-data';
 
 import './Home.css';
 
 const Home = () => {
   const [clicked, setClicked] = useState(false);
   const [sticky, setSticky] = useState(false);
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  };
 
   const clickHandler = () => {
     setClicked(!clicked);
@@ -36,7 +45,10 @@ const Home = () => {
         </div>
         <div className={clicked ? 'home-nav-menu active' : 'home-nav-menu'}>
           <NavLink className="home-nav-link" to="/">
-            Home
+            Gallery
+          </NavLink>
+          <NavLink className="home-nav-link" to="/">
+            Blog
           </NavLink>
           <NavLink className="home-nav-link" to="/">
             About Us
@@ -74,6 +86,11 @@ const Home = () => {
           </div>
         </Card>
       </header>
+      <section className="testimonials"></section>
+      <section className="gallery">Gallery</section>
+      <section className="blog">Blog</section>
+      <section className="about">About</section>
+      <section className="contact">Contact</section>
     </>
   );
 };
