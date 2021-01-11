@@ -10,14 +10,6 @@ const Home = () => {
   const [clicked, setClicked] = useState(false);
   const [sticky, setSticky] = useState(false);
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-  };
-
   const clickHandler = () => {
     setClicked(!clicked);
   };
@@ -63,6 +55,7 @@ const Home = () => {
         <ReactPlayer url="https://vimeo.com/63804783" />
         <Card>
           <div className="home-form">
+            <h1>Submit your form</h1>
             <div className="form-container">
               <input type="text" required />
               <label htmlFor="name" className="form-label">
@@ -84,7 +77,7 @@ const Home = () => {
           </div>
         </Card>
       </header>
-      <section className="testimonials"></section>
+      <section className="testimonials">Testimonial</section>
       <section className="gallery">Gallery</section>
       <section className="blog">Blog</section>
       <section className="about">About</section>

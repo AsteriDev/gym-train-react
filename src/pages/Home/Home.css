@@ -96,9 +96,11 @@
 
 .home-header {
     display: flex;
-    margin: 6rem 10rem;
+    padding: 6rem 10rem;
     justify-content: space-between;
+    gap: 6rem;
     align-items: center;
+    background-image: linear-gradient( 180deg, #8097ff 0%, #9faeff 50%, #bfc0fd 100%);
 }
 
 .home-form {
@@ -163,6 +165,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .home-header {
+        flex-direction: column;
+    }
     .home-nav-logo {
         margin-left: 6rem;
     }
@@ -170,7 +175,7 @@
         margin-right: 6rem;
     }
     .home-header {
-        margin: 6rem 6rem;
+        padding: 6rem 6rem;
     }
 }
 
