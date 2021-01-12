@@ -2,31 +2,24 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import ReactPlayer from 'react-player';
+// import ScrollContainer from 'react-indiana-drag-scroll';
+
 import Card from '../../components/Card/Card';
 
 import './Home.css';
 
+import { Testimonial } from '../../data/dummy-data';
+
 const Home = () => {
   const [clicked, setClicked] = useState(false);
-  const [sticky, setSticky] = useState(false);
 
   const clickHandler = () => {
     setClicked(!clicked);
   };
 
-  const stickyNav = () => {
-    if (window.scrollY >= 500) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-
-  window.addEventListener('scroll', stickyNav);
-
   return (
     <>
-      <nav class={sticky ? 'sticky home-nav' : 'home-nav'}>
+      <nav class="home-nav">
         <NavLink class="home-nav-logo" to="/">
           LOGO
         </NavLink>
@@ -77,9 +70,27 @@ const Home = () => {
           </div>
         </Card>
       </header>
-      <section className="testimonials">Testimonial</section>
+      <section className="testimonials">
+        <h1>TESTIMONIALS</h1>
+        <div className="testi-content">
+          {/* <ScrollContainer className="scroll-container" vertical={false}> */}
+          {Testimonial.map((item) => (
+            <img className="testi-img" src={item.url} alt={item.title} />
+          ))}
+          {/* </ScrollContainer> */}
+        </div>
+      </section>
       <section className="gallery">Gallery</section>
-      <section className="blog">Blog</section>
+      <section className="blog">
+        <h1>BLOG</h1>
+        <div className="testi-content">
+          {/* <ScrollContainer className="scroll-container" vertical={false}> */}
+          {Testimonial.map((item) => (
+            <img className="testi-img" src={item.url} alt={item.title} />
+          ))}
+          {/* </ScrollContainer> */}
+        </div>
+      </section>
       <section className="about">About</section>
       <section className="contact">Contact</section>
     </>
