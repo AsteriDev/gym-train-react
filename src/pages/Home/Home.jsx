@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import ReactPlayer from 'react-player';
-// import ScrollContainer from 'react-indiana-drag-scroll';
 
+import Gallery from '../../components/HomeComponents/Gallery';
+import Testimonials from '../../components/HomeComponents/Testimonials';
 import Card from '../../components/Card/Card';
 
 import './Home.css';
-
-import { Testimonial } from '../../data/dummy-data';
 
 const Home = () => {
   const [clicked, setClicked] = useState(false);
@@ -70,27 +69,16 @@ const Home = () => {
           </div>
         </Card>
       </header>
-      <section className="testimonials">
-        <h1>TESTIMONIALS</h1>
-        <div className="testi-content">
-          {/* <ScrollContainer className="scroll-container" vertical={false}> */}
-          {Testimonial.map((item) => (
-            <img className="testi-img" src={item.url} alt={item.title} />
-          ))}
-          {/* </ScrollContainer> */}
-        </div>
-      </section>
-      <section className="gallery">Gallery</section>
-      <section className="blog">
+      <Testimonials />
+      <Gallery />
+      {/* <section className="blog">
         <h1>BLOG</h1>
         <div className="testi-content">
-          {/* <ScrollContainer className="scroll-container" vertical={false}> */}
           {Testimonial.map((item) => (
             <img className="testi-img" src={item.url} alt={item.title} />
           ))}
-          {/* </ScrollContainer> */}
         </div>
-      </section>
+      </section> */}
       <section className="about">About</section>
       <section className="contact">Contact</section>
     </>

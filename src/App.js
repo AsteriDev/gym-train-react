@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, withRouter } from 'react-router-dom';
+import { Route, withRouter, Switch } from 'react-router-dom';
 
 import { AuthContextProvider } from './context/AuthContext';
 import './App.css';
@@ -11,10 +11,12 @@ import Course from './pages/Course/Course';
 function App() {
   return (
     <AuthContextProvider>
-      <Route path="/" exact component={Home} />
-      <Route path="/auth" exact component={Auth} />
-      <Route path="/dashboard" component={Dashboard} />
-      <Route path="/course/:id" component={Course} />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/auth" exact component={Auth} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/course/:id" component={Course} />
+      </Switch>
     </AuthContextProvider>
   );
 }

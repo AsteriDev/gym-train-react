@@ -63,7 +63,7 @@ export const courses = [
   },
 ];
 
-export const Testimonial = [
+export const TestimonialItems = [
   {
     title: 'T01',
     url: 'https://images.unsplash.com/photo-1610047803562-7260ebe516cc',
@@ -79,5 +79,64 @@ export const Testimonial = [
   {
     title: 'T04',
     url: 'https://images.unsplash.com/photo-1608749769135-cdc495ef90ac',
+  },
+];
+
+export const GalleryItems = [
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1608749769135-cdc495ef90ac',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'http://images.unsplash.com/photo-1609952048180-7b35ea6b083b',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610047803562-7260ebe516cc',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1609972844913-e3308fde41d3',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
+  },
+  {
+    title: 'G01',
+    url: 'https://images.unsplash.com/photo-1610305013822-ad68befe3550',
   },
 ];
