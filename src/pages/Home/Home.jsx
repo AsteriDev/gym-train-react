@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 import ReactPlayer from 'react-player';
 
 import Gallery from '../../components/HomeComponents/Gallery';
 import Testimonials from '../../components/HomeComponents/Testimonials';
+import Blog from '../../components/HomeComponents/Blog';
+import About from '../../components/HomeComponents/About';
+import Contact from '../../components/HomeComponents/Contact';
 import Card from '../../components/Card/Card';
 
 import './Home.css';
@@ -19,32 +23,35 @@ const Home = () => {
   return (
     <>
       <nav class="home-nav">
-        <NavLink class="home-nav-logo" to="/">
+        <Link class="home-nav-logo" to="/">
           LOGO
-        </NavLink>
+        </Link>
         <div className="home-nav-icon" onClick={clickHandler}>
           <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
         <div className={clicked ? 'home-nav-menu active' : 'home-nav-menu'}>
-          <NavLink className="home-nav-link" to="/">
+          <Link className="home-nav-link" to="testimonial">
+            Testimonials
+          </Link>
+          <Link className="home-nav-link" to="gallery">
             Gallery
-          </NavLink>
-          <NavLink className="home-nav-link" to="/">
+          </Link>
+          <Link className="home-nav-link" to="blog">
             Blog
-          </NavLink>
-          <NavLink className="home-nav-link" to="/">
+          </Link>
+          <Link className="home-nav-link" to="about">
             About Us
-          </NavLink>
-          <NavLink className="home-nav-link" to="/">
+          </Link>
+          <Link className="home-nav-link" to="contact">
             Contact Us
-          </NavLink>
-          <NavLink className="home-nav-login" to="/auth">
+          </Link>
+          <Link className="home-nav-login" to="/auth">
             Login
-          </NavLink>
+          </Link>
         </div>
       </nav>
       <header className="home-header">
-        <ReactPlayer url="https://vimeo.com/63804783" />
+        <ReactPlayer controls={true} url="https://vimeo.com/63804783" />
         <Card>
           <div className="home-form">
             <h1>Submit your form</h1>
@@ -71,16 +78,9 @@ const Home = () => {
       </header>
       <Testimonials />
       <Gallery />
-      {/* <section className="blog">
-        <h1>BLOG</h1>
-        <div className="testi-content">
-          {Testimonial.map((item) => (
-            <img className="testi-img" src={item.url} alt={item.title} />
-          ))}
-        </div>
-      </section> */}
-      <section className="about">About</section>
-      <section className="contact">Contact</section>
+      <Blog />
+      <About />
+      <Contact />
     </>
   );
 };

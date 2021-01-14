@@ -4,7 +4,7 @@ import { GalleryItems } from '../../data/dummy-data';
 
 const Gallery = () => {
   return (
-    <section className="gallery">
+    <section className="gallery" id="gallery">
       <h1>GALLERY</h1>
       <div className="gallery-content">
         {GalleryItems.map((item, index) => (
